@@ -36,6 +36,34 @@ private Context context;
       attempts = (TextView)findViewById(R.id.textView5);
       attempts.setText(Integer.toString(counter));
       login = (Button)findViewById(R.id.button1);
+      login.setOnClickListener(new View.OnClickListener() {
+          public void onClick(View view) {
+        	  if (mydb.validateUser(emailaddress.getText().toString(),password.getText().toString())) {
+       		   Toast.makeText(getApplicationContext(), "Authenticated",
+       				      Toast.LENGTH_SHORT).show(); 
+       		   System.out.println("Before callling Intenet");
+       		Intent myIntent = new Intent(view.getContext(), Main2Activity.class);
+            startActivityForResult(myIntent, 0);
+       		   	       
+
+       		}
+        	  else{
+        	      Toast.makeText(getApplicationContext(), "Wrong Credentials",
+        	      Toast.LENGTH_SHORT).show();
+        	      attempts.setBackgroundColor(Color.RED);	
+        	      counter--;
+        	      attempts.setText(Integer.toString(counter));
+        	      if(counter==0){
+        	         login.setEnabled(false);
+        	      }
+
+        	   }
+
+
+              
+          }
+
+      });
    }
 
    public void login(View view){
@@ -43,8 +71,8 @@ private Context context;
 	   if (mydb.validateUser(emailaddress.getText().toString(),password.getText().toString())) {
 		   Toast.makeText(getApplicationContext(), "Authenticated",
 				      Toast.LENGTH_SHORT).show(); 
-		   Intent intent = new Intent(context, Main2Activity.class);
-	       startActivity(intent);
+		   System.out.println("Before callling Intenet");
+		   	       
 
 		}
 	 	
