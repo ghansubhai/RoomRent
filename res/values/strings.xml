@@ -8,10 +8,10 @@
    <string name="password">Password:</string>
    <string name="Login">Login:</string>
    <string name="attempts">Attempts Left:</string>
-   <string name="new_contract">&lt;a href="http://www.google.com">Create New Contract&lt;/a></string>
-   <string name="today_update">&lt;a href="http://www.google.com">Todays Update&lt;/a></string>
-   <string name="register_room">&lt;a href="http://www.google.com">Register Available Room &lt;/a></string>
-   <string name="search_existing">&lt;a href="http://www.google.com">Search Existing Contract &lt;/a></string>
-   <string name="change_password">&lt;a href="http://www.google.com">Change Password &lt;/a></string>
+   <string name="new_contract">Create New Contract</string>
+   <string name="today_update">Todays Update</string>
+   <string name="register_room">Register Available Room</string>
+   <string name="search_existing">Search Existing Contract</string>
+   <string name="change_password">Change Password</string>
 
 </resources>
