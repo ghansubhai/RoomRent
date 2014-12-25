@@ -20,6 +20,7 @@
    <string name="city">City</string>
    <string name="state">State</string>
    <string name="pin">Pin</string>
+   <string name="register">Register</string>
    
 
 </resources>
