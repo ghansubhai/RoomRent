@@ -11,7 +11,7 @@ import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteDatabase;
 
-public class DBHelper extends SQLiteOpenHelper {
+public class DBHelper1 extends SQLiteOpenHelper {
 
    public static final String DATABASE_NAME = "RoomRent.db";
    public static final String USERDETAILS_TABLE_NAME = "userdetails";
@@ -40,7 +40,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
    private HashMap hp;
 
-   public DBHelper(Context context)
+   public DBHelper1(Context context)
    {
       super(context, DATABASE_NAME , null, 1);
    }
